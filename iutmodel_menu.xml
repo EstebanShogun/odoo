@@ -14,8 +14,15 @@
         <menuitem id="menu_modele_" parent="menu_model_root"
             name="Entités" sequence="17"/>
 
-            <menuitem id="menu_res_company_" parent="menu_modele_"
+            <menuitem id="menu_res_company_p" parent="menu_modele_"
                 action="iut_it_prof_action" sequence="10" name="Professeurs"/>
+            <menuitem id="menu_res_company_co" parent="menu_modele_"
+                action="iut_it_cours_action" sequence="10" name="Cours"/>
+            <menuitem id="menu_res_company_e" parent="menu_modele_"
+                action="iut_it_eleve_action" sequence="10" name="Eleves"/>
+            <menuitem id="menu_res_company_cl" parent="menu_modele_"
+                action="iut_it_classe_action" sequence="10" name="Classes"/>
+
 
 
     </data>
