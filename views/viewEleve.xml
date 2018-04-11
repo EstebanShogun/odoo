@@ -18,7 +18,7 @@
     <!-- actions opening views on models -->
 
     <record id="iut_it_eleve_action" model="ir.actions.act_window">
-        <field name="name">Modèle</field>
+        <field name="name">Eleves</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">iut.it.eleve</field>
         <field name="view_type">form</field>
