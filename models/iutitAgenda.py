@@ -3,9 +3,9 @@
 from odoo import models, fields, api
 
 
-class iut_it_eleve(models.Model):
-    _name = 'iut.it.eleve'
+class iut_it_agenda(models.Model):
+    _name = 'iut.it.agenda'
 
-    name = fields.Char(string="Marque", required=True)
-    warranty_delay_month = fields.Integer(string="Mois sous garantie")
-    support_phone = fields.Char(string="Numéro de téléphone")
+    room = fields.Char(string="Salle")
+    start = fields.datetime(string='Horaire de début')
+    end = fields.datetime(string='Horaire de fin')

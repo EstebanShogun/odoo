@@ -3,8 +3,8 @@
 from odoo import models, fields, api
 
 
-class iut_it_agenda(models.Model):
-    _name = 'iut.it.agenda'
+class iut_it_cours(models.Model):
+    _name = 'iut.it.cours'
 
     name = fields.Char(string="Marque", required=True)
     warranty_delay_month = fields.Integer(string="Mois sous garantie")

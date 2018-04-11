@@ -3,9 +3,9 @@
 from odoo import models, fields, api
 
 
-class iut_it_prof(models.Model):
-    _name = 'iut.it.prof'
+class iut_it_classe(models.Model):
+    _name = 'iut.it.classe'
 
-    name = fields.Char(string="Marque", required=True)
-    warranty_delay_month = fields.Integer(string="Mois sous garantie")
-    support_phone = fields.Char(string="Numéro de téléphone")
+    name = fields.Char(string="Nom", required=True)
+    level = fields.Selection([('seconde', 'Seconde'), ('premiere', 'Première'), ('terminale', 'Terminale')])
+

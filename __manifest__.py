@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "tdsimodel",
+    'name': "projet",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -10,7 +10,7 @@
         Long description of module's purpose
     """,
 
-    'author': "teamDSI",
+    'author': "esteban",
     'website': "http://www.team-dsi.fr",
 
     # Categories can be used to filter modules in modules listing
@@ -27,7 +27,9 @@
         'security/tdsimodel_security.xml',
         'datas/datas.xml',
         'views/views.xml',
-        'tdsimodel_menu.xml',
+        'views/viewBrand.xml',
+        'views/viewProf.xml',
+        'iutmodel_menu.xml',
         'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode

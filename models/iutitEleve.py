@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+import datetime
 
 
-class iut_it_prof(models.Model):
-    _name = 'iut.it.prof'
+class iut_it_eleve(models.Model):
+    _name = 'iut.it.eleve'
 
-    name = fields.Char(string="Marque", required=True)
-    warranty_delay_month = fields.Integer(string="Mois sous garantie")
-    support_phone = fields.Char(string="Numéro de téléphone")
+    name = fields.Char(string="Nom", required=True)
+    surname = fields.Char(string="Prénom")
+    birthday = fields.Date(date="Date de naissance")
+    age = fields.Integer(compute='age_method')
+
+    @api.onchange('birthday')
+    def age_method(self):
+        self.age = (datetime.datetime.today()) - self.birthday

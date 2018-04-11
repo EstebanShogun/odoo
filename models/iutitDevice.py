@@ -3,14 +3,11 @@
 from odoo import models, fields, api
 
 
-# class tdsimodel(models.Model):
-#     _name = 'tdsimodel.tdsimodel'
-#
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+class iut_it_device(models.Model):
+    _name = 'iut.it.device'
+
+    name = fields.Char(string="Appareil")
+    date_allocation = fields.Date(string="Date d'acquisition")
+    serial_number = fields.Char(string="Numéro de série")
+    date_purchase = fields.Date(string="Date d'achat")
+    date_warranty_end = fields.Date(string="Date de fin de garantie")
