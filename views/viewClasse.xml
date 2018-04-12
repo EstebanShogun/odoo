@@ -8,7 +8,8 @@
       <field name="model">iut.it.classe</field>
       <field name="arch" type="xml">
         <tree string="iut_it_classe">
-          <field name="name"/>
+            <field level="Niveau"/>
+            <field name="name"/>
         </tree>
       </field>
     </record>
@@ -40,6 +41,8 @@
                     <group>
                         <group>
                             <field name="name"/>
+                            <field level="Niveau"/>
+                            <field nombre_eleve="Nombre d'élèves de cette classe"/>
                         </group>
                     </group>
                 </sheet>

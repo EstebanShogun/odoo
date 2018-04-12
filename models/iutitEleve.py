@@ -11,6 +11,7 @@ class iut_it_eleve(models.Model):
     surname = fields.Char(string="Prénom")
     birthday = fields.Date(date="Date de naissance")
     age = fields.Integer(compute='age_method')
+    nom_classe = fields.Char(string="Nom de la classe", required=True)
 
     @api.onchange('birthday')
     def age_method(self):

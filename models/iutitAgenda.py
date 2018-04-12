@@ -9,3 +9,4 @@ class iut_it_agenda(models.Model):
     room = fields.Char(string="Salle")
     start = fields.datetime(string='Horaire de début')
     end = fields.datetime(string='Horaire de fin')
+    classe = fields.Char(string="Classe concernée")
